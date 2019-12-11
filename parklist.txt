@@ -1,0 +1,8 @@
+133	Estadio Monterrey	None	Monterrey	Nuevo Leon	MX	
+134	Parc Jarry	Jarry Park	Montreal	QC	CA	
+135	Stade Olympique	Olympic Stadium	Montreal	QC	CA	
+203	Estadio Hiram Bithorn	None	San Juan	None	PR	
+216	Sydney Cricket Ground	None	Sydney	New South Wales	AU	
+221	Tokyo Dome	None	Tokyo	Tokyo	JP	
+226	Exhibition Stadium	None	Toronto	ON	CA	
+227	Rogers Centre	Skydome	Toronto	ON	CA	
