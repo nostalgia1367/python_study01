@@ -1,0 +1,19 @@
+Now find the point marked number 11 in your starter notebook and split the daily engagement 
+data into two lists. 
+The first list should contain the engagement data for students who eventually passed the first project, and 
+you should name this list passing engagement. 
+The second should contain records for students who don't eventually pass the first project, and you should 
+name this list non-passing engagement. 
+Throughout most of the time that this data was being collected, the first nano degree project was analyzing New York 
+subway data, so that's the project that you're going to assume is the first project for this purpose. 
+Now this project was actually updated at some point and the key identifying it changed, 
+so I've given you both keys here. 
+You should consider a student to have passed the first project if they ever pass a project with 
+either of these two keys. 
+As a reminder, here's what the project submission data looks like. 
+You can use the lesson_key field to see which project was submitted, and you can use the assigned_rating field to see 
+whether the student passed the project. 
+The table descriptions file available in the downloadable section lists the possible values for 
+the assigned rating field. 
+Once you're finished, find how many engagement records correspond to students who passed the first 
+project and how many correspond to students who didn't, and enter your number in the boxes on the next screen. 

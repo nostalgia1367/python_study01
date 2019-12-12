@@ -1,0 +1,19 @@
+Hi, and welcome to Introduction to Data Analysis. 
+I'm Caroline and I'll be your instructor for the course. 
+Now a data analyst is someone who uses data to answer questions, and that's exactly what you'll 
+be doing in this course. 
+You'll tackle questions like what makes students more likely to submit their projects, or what countries 
+around the world have the highest and lowest employment rates, and how does the country you live in compare? 
+Or how the subway ridership varied by location, time of day and weather conditions, and many more. 
+For each data set you'll have the chance to pose your own questions and perform your own investigations. 
+Along the way you'll learn to use some libraries that make data analysis a lot easier. 
+Specifically, you'll work with NumPy, 
+Pandas and Matplotlib. 
+But you'll start off analyzing data using pure Python. 
+Now you won't need any experience with data analysis in order to take this course. 
+But you will need to be comfortable programming in Python. 
+You should be familiar with things like loops, functions, lists, dictionaries, 
+objects, and things like that. 
+If you need to learn more about any of those topics, 
+check out the links in the instructor notes. 
+Now let's get started. 

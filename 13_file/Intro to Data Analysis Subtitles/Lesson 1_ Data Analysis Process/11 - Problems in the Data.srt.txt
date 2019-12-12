@@ -1,0 +1,22 @@
+Now I noticed a couple problems when looking at the data. 
+The first thing I'm wondering is why were there more unique students in the enrollment table than 
+in the engagement table? The engagement table is supposed to include a row for each day that each 
+student is enrolled, even if the student didn't visit the site at all that day. 
+So there should have been the same number of unique students in both tables. 
+The second problem was that the column containing student account keys was named account_key in two of 
+the tables and acct in the third. 
+This one isn't really a big problem but it is inconvenient. 
+I kind of expect to keep forgetting which table has account_key and which table has acct. 
+The first problem is confusing. 
+When I first started analyzing this data, I didn't know how to fix it. 
+I didn't even know why it had happened. 
+We'll investigate this together in a minute. 
+Fixing the second problem is easier. 
+You can simply the column name from acct to acount_key by removing the value for 
+acct from each row and adding it back under the name account_key. 
+Go ahead and write code to fix the problem. 
+Once you're done, check whether your code worked by running this command, and enter the output in this box. 
+If you prefer to create a new variable rather than modifying the existing variable, 
+then use your new variable name in place of daily_engagement in this command. 
+If you're not sure how to remove an element from a dictionary, 
+the post in the instructor notes might be helpful. 

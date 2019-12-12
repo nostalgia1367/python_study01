@@ -1,0 +1,7 @@
+Congratulations. 
+You've reached the end of the lesson. 
+You went through the data analysis process from start to finish, 
+starting with posing a question, all the way through sharing what you found. 
+I'm sure you made some fascinating discoveries. 
+In the next lesson you'll learn some additional libraries that can make writing data analysis code a lot easier. 
+I'll see you then. 

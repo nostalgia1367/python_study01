@@ -1,0 +1,64 @@
+I decided to write three functions. 
+One to group the records by account_key. 
+One to sum up all the entries for each account_key. 
+And one to print out summary statistics like the mean and standard deviation. 
+I named my function group_data. 
+And I decided to make it take the data as an argument, and return the dictionary mapping 
+account keys to lists of records. 
+Now I could have left the function like this, and made it always group by account key, but I wanted to 
+leave some flexibility there. 
+So I added an extra argument key name which would indicate the key to group by. 
+Then I indented the code I had previously, so it would be part of the function. 
+And I changed the variable I was looping over to be the input data. 
+I also changed the field name I was grouping by, 
+to be the input key_name rather than account_key. 
+Then I changed each of the variable names to be suitably generic. 
+And finally return to the grouped data. 
+Finally, I called this function to create the same engagement by account dictionary 
+that I had previously. 
+Now the calculation I asked you to do for a number of lessons, 
+will use this same engagement by account dictionary, so it actually wasn't necessary to 
+write this function just yet. 
+But I liked the idea of writing it, 
+because this felt like a clean interface for our function. 
+It takes in some data and it groups it by some key name. 
+Later, you'll see that the library pandas has some function that works pretty similarly to this one. 
+Next, I moved on to the function to sum up the entries for each account key. 
+I named my function, 
+sum_grouped_items and I had it take as inputs the grouped data and the field name to sum up. 
+In this case, the field name definitely needed to be an argument. 
+Because I wanted to sum up both the total minutes visited and the lessons completed. 
+Again I indented the code I had previously to be a part of the function. 
+Next I changed the dictionary I was looping over to be the input grouped data, and I changed the field name I was 
+summing up to be the input field name. 
+Again, I updated each of the variable names to be suitably generic. 
+And finally I returned the summed data. 
+Again, I called my function to recreate the total minutes by account dictionary that I had created recently. 
+Next I was ready to write a function to print summary statistics about the data, 
+such as the mean and standard deviation. 
+I named my function, 
+describe data and I had it take one argument, the data to describe. 
+Then I moved all these print statements within the function, and I changed the data I was 
+summarizing to the argument data. 
+I also moved the import statement to the top of the cell. 
+And I called my new function to describe the total minutes data. 
+When I re-ran this cell, I got the same results as before which is good. 
+Next I was ready to analyze the lessons completed by account using the functions I'd just written. 
+I started with the engagement data grouped by account. 
+And then I summed up the number of lessons completed for each account key. 
+Then I called the describe data function and again, I needed to take the values of my 
+lessons completed by account dictionary before passing into the describe data function. 
+When I ran this cell, 
+I saw that the mean number of lessons completed in the first week is about one and a half. 
+With a standard deviation of three. 
+It makes sense that there would be a lot of variations, since some students might 
+complete a lot more lessons in the first week than others. 
+The minimum number of lessons competed is zero, which is not surprising. 
+I certainly expected there would be some students who didn’t complete any lessons in their first week. 
+And the maximum is 36, 
+which is quite some. 
+Now you probably didn't write exactly the same functions that I did, 
+and that's fine. 
+There's a lot of valid ways to do this. 
+As long as you got the correct answers, 
+then you're good. 

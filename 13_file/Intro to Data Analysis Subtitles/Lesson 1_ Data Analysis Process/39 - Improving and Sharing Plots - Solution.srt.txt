@@ -1,0 +1,23 @@
+Thanks for sharing your findings. 
+I can't wait to see what discoveries you've made. 
+I wanted to improve the histograms showing the number of days students visit the classroom during 
+their first week, for both passing and non-passing students. 
+So I started off with the same plotting code that I had used previously. 
+Then I added the line, 
+import seaborn as sns. 
+To the top of the first cell, since importing seaborn will automatically make the plots look a little nicer. 
+You can see the difference here. 
+The colors are a little bit better and there's a grid in the background. 
+Next, I wanted to use the bins argument to specify that there should be exactly eight bins for this histogram. 
+This will fix those blank spots that we saw earlier. 
+There should be eight bins since there are eight possibilities for the number of days you visit the classroom in 
+the first week, 0 through 7 inclusive. 
+I also used plt.xlabel to specify that the x access was measuring number of days. 
+And I used plt.title to add a title that would explain what the graph was showing to someone 
+who didn't already know. 
+Re-running the cell, I can see that the strange gaps have disappeared and my axis label and title have been added. 
+Then I made very similar changes to the second histogram adding an xlabel, 
+a title and setting the number of bins to eight. 
+I didn't re-import Seaborn since that's not necessary. 
+Seaborn will apply to all plots that are made from now on. 
+And again I can see that all the weird gaps are gone and my x label and my title have been added. 

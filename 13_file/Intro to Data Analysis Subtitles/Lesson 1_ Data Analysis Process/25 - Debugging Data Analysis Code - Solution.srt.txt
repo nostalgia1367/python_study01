@@ -1,0 +1,36 @@
+The surprising data point I wanted to investigate was the student who had the maximum number of minutes. 
+First, I needed to find that student. 
+First, I initialized the student with the max minutes to be none and the maximum minutes spent to be zero. 
+Then I looped over each student and the number of minutes they spent in the total minutes by account dictionary. 
+If the total number of minutes was greater than the maximum I had found so far, then I reset both 
+the maximum number of minutes and the maximum student to be this number of minutes and this student. 
+Then I output the maximum number of minutes I'd found to make sure it was the same, and it looks like it worked. 
+Next, I wanted to print each engagement record for that student. 
+So I looped over the engagement records, 
+and if the engagement record's account key was equal to this student's account key, 
+then I printed the record, and these are the records I found. 
+The first thing I noticed is that there are way more than seven entries here, 
+which shouldn't be the case since this is within the paid engagement only in the first week dictionary. 
+This should only include one week's worth of data. 
+The data points aren't falling within a one week time span either. 
+You can see here the first data is January 7th and then scrolling to the bottom, 
+the last date is April 26th. 
+This makes me suspect that something might be wrong with my within one week function. 
+In this function, I'm checking that the engagement date came at most seven days after the join date. 
+I'm not checking that the engagement date actually came after the join date. 
+So for students who enroll once, 
+then cancel, then enroll again later, 
+everything from the first enrollment will count as their first week. 
+To fix this, I checked that at least zero days had passed from the join date to the engagement date. 
+That way, I'm only considering data from the most recent enrollment which was my intention. 
+Then I reran this cell, 
+as well as all the cells after it. 
+Now the maximum time spent in the first week comes out to about 3,500 minutes, 
+which is roughly 60 hours. 
+That's a lot of time to spend studying in one week but, at least, 
+it's possible. 
+Now, even though this number sounds reasonable, there could still be a mistake, so it's a good idea to rerun 
+the same check that I did before. 
+I'll go ahead and do that. 
+This time, I'm seeing exactly seven entries within the first week, 
+which sounds perfect. 

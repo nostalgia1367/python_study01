@@ -1,0 +1,54 @@
+Now one thing that looks a little funny about this data is that every value is a string. 
+But days to cancel looks like logically it could be an integer. 
+Cancel date is clearly a date and is cancelled looks like a boolean, 
+but they are representative strings. 
+That's because the CSV library doesn't try to detect what type each column has. 
+It's up to me to convert these data types if I want. 
+I could wait and convert them later when I really need to. 
+For example, every time I need to check weather is cancelled is true, 
+I could use the code, if is cancelled is equal to the string true, 
+rather than the simpler if is canceled that I could use if I had a boolean. 
+However, I prefer to update all my data types upfront because otherwise I tend to forget that 
+they're not the type I expect, and then I waste time debugging later. 
+I've written some code for you which you can find in your starter notebook which updates a bunch of the types. 
+Here you can see the main loop that's updating the types of the enrollments data. 
+I didn't update the type of account key, 
+because even though the account key looked like an integer, I'm never going to do arithmetic with it. 
+I'm not going to add up two account keys, for example, so, 
+the types might as well remain a string. 
+I did convert the cancel date to a python date time object, and I wrote this function to do that for me. 
+First I check whether the date is actually the empty string, 
+in which case I return none. 
+For example, 
+the cancel date could be an empty string if the student hadn't cancelled yet. 
+Otherwise, I use the strptime function to parse the string as a date time. 
+Don't worry if you've never seen the strptime function. 
+I'm going to take care of the date time handling in this lesson. 
+Similarly, for the days to cancel function, 
+I've written a function called parse maybe int. 
+This function takes something that might be an integer but might not be. 
+For days to cancel, 
+it might not be an integer if the student hasn't cancelled yet. 
+If the argument is the empty string, 
+this function will return none and otherwise it will cast the argument to an integer. 
+Then, for the is canceled column, 
+I check if the value is equal to the string true. 
+So this comparison will return the boolean true if the field is equal to the string 
+true and false otherwise. 
+The rest of the conversions are similar. 
+The only other thing that's a bit strange is in the daily engagement table where you can see that a few times 
+I've cast the number to a float first and then an end. 
+To see why, I'm going to scroll up and see what the lesson's completed value looked like. 
+The first value for lessons completed was zero point zero. 
+Because of the decimal point, 
+directly converting the string to an integer would fail. 
+But, logically, I know lessons completed should be an integer since if you only complete half a lesson, you'll be marked 
+as completing zero lessons, not 0.5. 
+So, once I've converted the value to a floating point number, 
+I then convert it to an integer. 
+I've done the same thing for number of courses visited and projects completed. 
+This code is included in the starter notebook. 
+Once you have everything set up locally, 
+you should make sure you run each of these cells. 
+That way you'll have the correct types throughout the rest of the lesson. 
+In general, make sure you run all the provided starter code, or some later code may not work correctly. 

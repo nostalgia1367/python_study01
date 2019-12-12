@@ -1,0 +1,29 @@
+I chose to create a new field in the data called has_visited. 
+Now there's a couple of choices for where to add this field. 
+The latest I could possibly add it is to this engagement_by_account data since that's where I'll need it. 
+On the other hand, then that field won't be available in all the other lists of data that I have, 
+which could annoy me later. 
+Another option would be to add it at the very beginning of the notebook when I first load in the data and 
+then reevaluate all the cells. 
+But some of these cells take a couple seconds to run and I'm not really excited about doing that. 
+As a compromise I decided to add it to the paid_engagement table after I had removed 
+the free trial cancels but before I had separated out just the engagement data for the first week. 
+To do this I looped over each engagement in the paid_engagement table. 
+Then if that engagement record showed that more than zero courses were visited, 
+I set the has_visited field to one. 
+Otherwise, I set the has_visited field to zero. 
+Remember the reason that I'm making this field numeric, zeros and ones, is so that I can add this field up 
+to get the total number of days that the student visited the classroom. 
+Now I'll need to run this cell, as well as rerun all the cells below it, to make 
+sure that the has_visited field gets added anywhere it needs to be added. 
+Then I can analyze the days_visited_by_account using code very similar to what I had previously. 
+Again, I'll start with the engagement data grouped by account and then I'll sum up the has_visited 
+field for each account. 
+And again, I'll describe my data. 
+And when I run this cell I see that the mean number of days visited in the first week 
+is a little less than three. 
+The standard deviation is a bit more than two. 
+The minimum is 0 and the maximum is 7. 
+The minimum and maximum in particular are exactly what I expected. 
+In fact, I would be pretty surprised if there weren't at least one student who visited 0 days in their first week and 
+at least one student who visited all 7. 

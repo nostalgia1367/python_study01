@@ -1,0 +1,18 @@
+I'll start off by creating an empty dictionary. 
+Then, I'll loop through the enrollments and notice here that I'm using the new enrollments variable I created, 
+which doesn't include the audacity test accounts. 
+I want to add the student to the dictionary if they haven't cancelled yet or if it was at least seven 
+days before they did cancel. 
+Then I'll pull out the account, 
+cancel the enrollment date and save those in variables. 
+And I'll add those to the dictionary with the account_key as the key and the enrollment_date as the value. 
+Then I'll use the line function to see how many students this is and it comes out to 995. 
+Now this works, but there's something a little strange about it. 
+Earlier we saw that the same student can enroll multiple times and if that happens, 
+then I'm just going to be saving an arbitrary one of those enrollment dates. 
+Instead, I think it makes sense to save their most recent enrollment date in that case. 
+To accomplish that, I'll add another check and I'll only add the enrollment date to the dictionary if either the 
+account key was not already present, or if this enrollment date is more recent than the date that's already present. 
+And I'll rerun the cell. 
+Of course, that shouldn't change the number of paid students, 
+it just changed what enrollment date was saved for certain students. 

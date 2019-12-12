@@ -1,0 +1,10 @@
+So I just noticed that the maximum number of minutes spent by any student during the first week is 
+actually greater than the number of minutes in a week. 
+My process for debugging problems like this is similar to my process tracking down the missing 
+engagement records before. 
+I'd like you to follow the same steps here. 
+First, you'll need to decide which data points count as surprising. 
+Then, print some of those out and see if you can find anything wrong. 
+Were you able to find a problem? Describe any problems you found here. 
+The bug is actually in some of the starter code that I gave you. 
+So if you can't figure out exactly what's causing any problems that you find, don't feel bad. 

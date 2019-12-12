@@ -1,0 +1,12 @@
+There's a lot of interesting questions we could answer. 
+Besides the questions I already mentioned, we could look at how much time the average student spends 
+taking classes on Udacity. 
+We could look how time spent relates to the number of lessons or projects students complete. 
+We could look at how student engagement changes over time. 
+Or how many times students submit projects before they pass and whether this differs for 
+different projects. 
+I'm sure you thought of a lot of interesting questions as well. 
+In this lesson, I'm going to focus on how the numbers in the daily engagement table differ for students who pass their 
+first project versus students who don't. 
+But feel free to explore any of the other questions you've thought of yourself and 
+share what you find on the forums. 

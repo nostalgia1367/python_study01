@@ -1,0 +1,29 @@
+Now I could do the same thing for the num_courses_visited field that I did for the other two fields. 
+That is, 
+group the records by account key. 
+Then sum up the num_courses_visited field for each account key. 
+However, if I did this, the results would be a little bit strange. 
+For example, suppose this student visited three courses their first day, 
+zero courses their second day, 
+and one course their third day. 
+Then the total for this student would be four. 
+But that's not equal to the number of days the student visited the classroom at all, which is two. 
+And it's not equal to the number of unique courses the student visited, 
+which is either three or four, depending this was the same course as one of these three. 
+Instead, I would prefer to analyze the total number of days each student visited 
+the classroom at all. 
+Regardless of how many courses they visited that day. 
+There are a couple of ways I could accomplish this. 
+First, I could change the code in the sum_grouped_items function or create a new similar function that 
+instead of adding each number up, 
+adds up the total number of records where the number is greater than zero. 
+Alternatively, I could create a new field in the data called has_visited, 
+that is either 1 or 0. 
+It's 1 if the student visits the classroom at all on that day, and 0 otherwise. 
+If I do this, I could call the same sum_grouped_items function that I've already written to add up these numbers. 
+And what I would get is the total number of days that the student visited the classroom. 
+The second way is the way I would prefer to use, but either one should work. 
+Using whichever these two methods you prefer, calculate the mean, 
+standard deviation, minimum and maximum for this number, the number of days student visit any manner of degree 
+course during their first week. 
+Then enter your results in these boxes. 

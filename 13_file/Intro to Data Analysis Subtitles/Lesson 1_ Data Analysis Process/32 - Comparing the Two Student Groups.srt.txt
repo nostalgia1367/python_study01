@@ -1,0 +1,20 @@
+Now I want you to calculate some metrics you're interested in for both groups of students. 
+Students who pass the subway project and students who don't. 
+For example, a good starting point would be the three that we looked at earlier. 
+The number of minutes students spend in the classroom, the number of lessons they complete, and the number of 
+days that they visit the classroom. 
+Try to think of some other things to look at as well, though. 
+You might look at whether these students are more likely to go on to complete other projects. 
+Or you might try looking at some of the more granular data in daily_engagement_full.csv, and see if 
+there's anything you can do with that. 
+Be creative here. 
+There's a lot available in this data that you could explore. 
+Do the results surprise you? Do you notice anything interesting about them? Choose the metric where you think the 
+difference is the most interesting, and share what you found on the forums. 
+Also select which metric you shared here and enter the mean for students who pass 
+in this box and the mean for students who don't pass in this box. 
+If your most interesting finding was non-numerical, 
+you can leave these boxes blank. 
+I'm hoping you came up with your own idea for something to explore and that you'll check the other box, but you 
+might also want to enter your value for say minutes spent to check that your code is working correctly. 
+Also check this box once you've posted on the forums. 

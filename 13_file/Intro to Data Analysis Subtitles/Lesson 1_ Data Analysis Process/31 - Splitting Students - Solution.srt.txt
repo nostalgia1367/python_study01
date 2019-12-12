@@ -1,0 +1,31 @@
+To solve this problem, 
+I decided to first create a set of all students who pass the subway project at some point. 
+First I looped over each submission in the paid_submissions table, which contains all the project submissions 
+from students that we're analyzing. 
+Next I pull out the project key into the rating. 
+Next I wanted to check if this project was the subway_project, and I could have done that by separately 
+comparing is this project the first project in the list, or is it the second project in the list? 
+This would work, but there's actually an easier way to do this if you're familiar 
+with Python's in keyword. 
+So instead I checked if this project's in the list subway_project_lesson_keys. 
+Next I wanted to check if the student passed the project, so I added a condition that 
+rating is equal to pass. 
+However, this isn't actually the only way to pass the project. 
+In the table description, it mentions that past means meets specifications, 
+but distinction means exceeds specifications. 
+So I also wanted to consider a rating of distinction to be passing the project. 
+Finally, when using multiple ands and ors in the same check, 
+it's always important to add parentheses appropriately. 
+In this case I wanted to check that the project was the subway project and that the student had passed the project. 
+If so, 
+then I added this student's account key to the past subway project set. 
+Finally, I wanted to check how many unique students had passed the subway project, and that turned out 
+to be 647 in this data set. 
+Next, I was ready to split the data in the passing_engagement and non_passing_engagement and 
+I started each office the empty list. 
+I looped over each engagement record in the paid engagement_in _first_week table, and I check if the account 
+key for that engagement record was one of the account keys that had passed the subway project. 
+If so, I appended this engagement record to the passing_engagement table. 
+Otherwise, I appended it to the non_passing_engagement table. 
+Then I printed out the number of entries in both tables. 
+There are about 4,500 entries in the passing_engagement table and about 2,300 in the non_passing table 

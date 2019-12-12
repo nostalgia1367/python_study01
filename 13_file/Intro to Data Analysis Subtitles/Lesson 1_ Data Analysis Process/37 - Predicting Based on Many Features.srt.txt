@@ -1,0 +1,26 @@
+Another thing you might want to do at this point is try to predict which students are likely to pass their first 
+project, and which students aren't. 
+You could take a first pass of this using some heuristics based on your exploration. 
+For example, 
+you could predict that students who spend more time in the classroom during their first week are more likely to 
+eventually pass the first project. 
+However, getting a really good prediction this way could be difficult. 
+For one thing, there are lots of different pieces of information that we probably should be looking at. 
+You'd probably at least want to look at the things I looked at earlier, 
+lessons completed, 
+minutes spent, and days visited. 
+But there could be a lot more pieces of information or features that you'd like to look at as well. 
+This wouldn't be so bad except that all of your different features can have complex interactions with each other. 
+For example, when you look at minutes spent in the classroom on its own, 
+it might look like a really important feature. 
+But then when you look at lessons completed and minutes spent together, you might see 
+that after you already know how many lessons a student completed, knowing how many minutes they spent doesn't 
+give you any additional information. 
+In many situations like this one, 
+you can use machine learning to make pretty good predictions automatically, 
+usually a lot better than the predictions you could make by hand. 
+Depending on the machine learning algorithm you use, it might also give you a ranked list of which features 
+were most important to the prediction, 
+which can be very interesting. 
+If you'd like to learn more about this, 
+you might want to take our introduction to machine learning course linked in the instructor notes. 

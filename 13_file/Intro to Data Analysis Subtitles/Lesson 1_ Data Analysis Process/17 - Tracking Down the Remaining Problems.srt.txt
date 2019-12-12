@@ -1,0 +1,21 @@
+At this point, since their were only three remaining problematic enrollments, 
+I printed out all of them. 
+However, this time when I looked at the records, 
+I wasn't really sure what the problem was. 
+I ended up asking a Udacity data scientist if he knew what was going wrong. 
+He pointed out that these students were all Udacity test accounts. 
+Which he could tell because they had is Udaucity equal to true. 
+These test accounts aren't guaranteed to be present in the daily engagement table. 
+This is really good to know. 
+I should also probably be excluding any test accounts from my analysis anyway. 
+At this point, there weren't any more surprising data points. 
+I did go ahead and move all of the Udacity test accounts from the data right away since I didn't plan to 
+include them in any future analysis. 
+First, I created a set of all the Udacity test accounts by looping over the enrollment data, and I found that 
+there were six of them in this data set. 
+Then I wrote a function to remove any data associated with those accounts. 
+Finally, I called my function on all three of my tables and checked how many records 
+were left in each. 
+Most of the data is still included, 
+which is what I expected. 
+I did create new variables for the updated data, just in case I ever want to look at the original data again. 

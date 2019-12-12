@@ -1,0 +1,24 @@
+One more thing you may be wondering is, 
+how does the term Data Analysis relate to similar terms like Data Science, 
+Data Engineering or Big Data? First, Data Science is very similar to Data Analysis. 
+In fact, many people might describe some of the examples I gave near the beginning of the lesson, 
+such as Netflix's movie recommendations as data science. 
+I often hear people use the terms, 
+data analysis and data science interchangeably. 
+However, to the extent that there is a difference. 
+In my experience data science is a little more likely to refer to building some sort of a system, 
+like a recommendation system, or a ranking algorithm. 
+While a blog post or a paper is more likely to be refered to as data analysis. 
+It's definitely a fuzzy line though. 
+If you hear some advice for a data scientists, it's probably relevant for a data analyst as well. 
+In terms of job postings, a data scientist title sometimes requires more experience than a data analyst title. 
+Although of course this varies by company. 
+Data engineers are more focused on the data wrangling step of the data analysis process. 
+They make data pipelines and insure that data collection is fault tolerant and scales well. 
+They're more involved in storing and processing data, and less involved in drawing 
+conclusions based on the data. 
+Big data is a fuzzy term that refers to the fact that many companies today are dealing with a lot of data, 
+terabytes, petabytes, and more. 
+There's no rule for how much data you need before it is big, but certainly the amount of data we have today 
+seems big compared to ten years ago. 
+Data analysts, data scientists, and data engineers can all work with either big data or not so big data. 

@@ -1,0 +1,35 @@
+Let's get started with the Udacity student data. 
+We'll start with the data wrangling phase. 
+That is, acquiring and cleaning the data and you'll pose a question once you know 
+what data you have to work with. 
+Data acquisition can happen in a variety of ways. 
+In this case, 
+you acquired the data by downloading some files that were available. 
+In other cases, you might need to get the data from an API or you might need to scrape 
+it from a web page. 
+You'll also often need to combine data from multiple different formats. 
+Now don't worry if some of these terms are unfamiliar to you. 
+They'll be covered in more depth in our data wrangling course which is linked in 
+the instructor notes. 
+It's a great course if you'd like to learn more about how to get data from a variety of different sources. 
+Your files are in a format called CSV which stands for comma separated values. 
+A CSV file is similar to a spreadsheet with no formulas. 
+The CSV format is also very easy to process using code. 
+Unlike, for example, and XLSX file, 
+which is the format used by Microsoft Excel. 
+For example, 
+let's take a look at one of your files, 
+which contains student enrollments. 
+Here's what the file looks like in Google spreadsheets. 
+There is a row for each time a student enrolls and columns for different pieces of information such as 
+the account key, the enrollment date, 
+and the cancellation date, if any. 
+Now here is what the file looks like if you open it in a plain text editor. 
+A plain text editor is a program like Notepad or Subline that shows exactly what is present in the file. 
+As you can see, the actual contents of the file are very simple. 
+The header row from the spreadsheet is present as the first line of the CSV file. 
+The second row of the spreadsheet is the second line of the CSV and so on. 
+Within each row, you'll see the first cell, followed by a comma, 
+followed by the second cell, 
+followed by a comma, and so on. 
+This makes CSV's very easy to process in programming languages such as Python. 

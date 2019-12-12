@@ -1,0 +1,46 @@
+I used the functions that I wrote earlier to calculate the same three metrics that I already looked at, 
+but this time for both passing and non-passing students. 
+First I used the group data function to group the data for passing students by account key. 
+And then I did the same for non-passing students. 
+Next, I summed up the total minutes visited for non-passing students, and described the results. 
+I also did the same thing for passing students. 
+I decided to print the data for both groups of students within the same cell so that it would be easier 
+to compare the output. 
+And because of this, 
+I also added these print statements so that I could differentiate which output went to which group. 
+The first thing that I noticed about this output is that the average time spent in the classroom 
+is a lot higher for passing students than for non-passing students. 
+These means correspond to about six and a half hours in the first week for students who pass, and 
+two and a half hours for students who don't pass, 
+which is quite a difference. 
+The standard deviation is also a lot higher for students who pass. 
+This isn't surprising to me since the mean is so much higher for passing students. 
+And the more time students are spending, 
+the easier it is to have a lot of variation among the times. 
+The minimum is zero for both, 
+which is as I expected. 
+I wouldn't guess that not visiting the classroom during the first week makes it impossible to pass your project. 
+And the maximum amount of time spent is also a lot higher for passing students, roughly 60 hours 
+a week compared to 30 hours a week. 
+Next I ran a very similar piece of code for the number of lessons completed in the first week. 
+Again, I saw a much higher mean for students who passed the first project. 
+I find it interesting that students who pass are completing on average two lessons per week, 
+since I would have guessed that a reasonable pace might be one lesson per week. 
+However, it is true that a problem set counts as a lesson within this data, 
+so we might be seeing students who are completing one lesson and one problem set. 
+The maximum is also higher for students who pass, although the difference here isn't as dramatic as it was for 
+total minutes spent in the classroom. 
+And finally, I ran very similar coding again to examine the has_visited field. 
+In this case, I saw that the minimum and maximum days visited weren't different between students who passed and 
+student who didn't pass. 
+They were zero and seven in both cases. 
+That's not really surprising since there are hard limits on how many days you can spend in your first week. 
+It has to be at least zero and at most seven. 
+The mean again is noticeably higher for passing students, 
+although possibly not as dramatic as in the other two cases, at about three and a third for passing students, and 
+a little less than two days in the first week for non-passing students. 
+If I had to pick which of these difference I found most interesting, 
+I would probably pick total number of minutes visited, since the difference between roughly six and a half hours 
+in the first week versus two and half hours, 
+seems like the most striking difference. 
+But this is pretty subjective. 

@@ -1,0 +1,16 @@
+The data point I saw was this one, 
+although depending on your code, 
+you might have seen a different one. 
+If you couldn't figure out what was wrong with the data point, that's okay. 
+Sometimes a little more investigation will be necessary. 
+But I happened to notice that the join_date and the_cancel date are the same and 
+the days_to_cancel is equal to 0. 
+That could definitely explain why there is no record in the engagement table for 
+this student. 
+The student probably needs to be enrolled for a full day before their engagement is recorded. 
+In order to find this record, 
+I looped over the enrollment table and found the account key for each enrollment. 
+Then I checked whether that account key was in the set of unique students in the engagement 
+table that I had found earlier. 
+If the student was missing from the engagement table, 
+I printed the record and then used break to exit the loop. 

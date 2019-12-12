@@ -1,0 +1,64 @@
+In Python, 
+the contents of a CSV file are commonly represented as a list of rows. 
+There are two common choices for how to represent each row. 
+In the first option, each row is a list. 
+So then the overall data structure is a list of lists. 
+In the second option, 
+each row is a dictionary. 
+This option works well if you have a CSV header because then the keys of each dictionary can be column names and 
+the fields can be values. 
+So then your overall data structure would be a list of dictionaries. 
+Now you could write the code to read in the data from the CSV yourself and it wouldn't be too hard, but 
+there are libraries already written to do it for you. 
+Here I've written some code using Python's unicodecsv library to read in the student enrollments and 
+print out the first record. 
+I'll go ahead and run the cell. 
+This code is taken pretty directly from the example code on the CSV module's documentation page. 
+There's a link to this page in the instructor notes. 
+So in this code, 
+first I create the list of enrollment. 
+Then I open the file. 
+The mode, rb, here, means that the file will be opened for reading. 
+And the b flag changes the format of how the file is read. 
+The CSV documentation page mentions that I need to use this when I'm using this library. 
+Next, you'll notice I'm using the DictReader, 
+which means each row will be a dictionary. 
+I chose this since our data does have a header row, and this will allow me to refer to each column by its name, 
+rather than its number. 
+Now the reader won't actually be a list of rows. 
+Instead it will be something called an interator. 
+If you're curious, you can learn more about iterators by following the link in the instructor notes. 
+What you need to know here though, is that the iterator let's you write a for loop to access each element, 
+but only once. 
+So if I were to add this second loop to print out all the row in the reader, 
+then actually nothing would be printed, 
+because you can only loop over an iterator once. 
+Since I want to access the data multiple times, 
+I used my one loop to append each row to a list. 
+And finally I need to close the file. 
+Then since this row is the last row in the cell, 
+it gets the output in the output area. 
+And actually this code is a bit like lengthier than it needs to be in a couple of ways. 
+The first is that I can avoid having to close the file by instead using a with statement. 
+When I open the file using a with statement, 
+I need to indent everything that accesses that file. 
+Then, once the indented block ends, 
+the file will automatically be closed. 
+This is closer to how the example code in the CSV documentation page looked. 
+And second, there's actually an easier way to convert an iterator to a list. 
+Here, by calling list{reader}, 
+I've created a list of the enrollment data without using a loop. 
+So now I can delete this line and this line. 
+Now I'd like you to write code to read in the other two CSV files. 
+And also take a look at the first row of each file to make sure it worked properly. 
+In case you're still getting everything set up, you'll also be able to complete this exercise in the Udacity 
+code editor at the end of this video. 
+If you do, you can use test run to see the output of your code, and submit to see if your 
+solution is correct. 
+If you do have everything set up locally, 
+then the starter notebook will contain the codes that I've just written, 
+as well as some other code you'll see later in the course. 
+Find the point marked number 1, 
+and add your code there. 
+Make sure you name your variables, 
+daily_engagement, and project_submissions, or some of the later code will not work. 

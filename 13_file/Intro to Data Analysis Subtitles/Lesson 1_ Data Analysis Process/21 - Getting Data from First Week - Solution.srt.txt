@@ -1,0 +1,13 @@
+To solve this I first start a function to remove any data points corresponding to students who canceled 
+during the free trial. 
+Next I called this function on each of the three tables and saved the results in new variables. 
+I also took a look at the length of these variables to see how much data had been removed. 
+Next, I started off the variable paid_engagement_in_first_week as the empty list. 
+Then I looped over each record in the engagement table and saved the student's account 
+key in this variable. 
+I also looked up the student's join date by using the dictionary I created earlier. 
+And I saved the data of the engagement record into this variable. 
+Next, I checked whether the two dates were within one week of each other. 
+And if so, I appended this record to the variable paid_engagement_in_first_week. 
+Finally, I printed out how many records there were, and you can see that about 21,000 of the engagement records 
+come from the students' first week. 

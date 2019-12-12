@@ -1,0 +1,37 @@
+I choose to modify the list rather than create a new list. 
+I looped over the daily engagement table. 
+And for each row I first created a new key, account key, and set it equal to the existing 
+values stored under the key ACCT. 
+Then once the value had been copied, 
+I deleted the ACCT key from the dictionary. 
+And I'll go ahead and run this code, 
+it doesn't have any output. 
+Now if you chose to create a new list that's fine. 
+But if you gave it a new name, you'll need to update the rest of the starter code to use your name 
+instead of daily_engagement. 
+Now that I've changed this field it will be easier to write a function to get the unique 
+students from each table. 
+So I'll go ahead and do that. 
+First, I'll move this change up above the previous investigation. 
+Since I'd already run this cell, it actually wasn't necessary to move it up, 
+but this will make it so that if I close the notebook and reopen in, the code will still 
+work if I run all cells in order. 
+Then I'll insert a new cell below this point and write my function there. 
+I'll name the function, 
+get unique students, and it will take one argument, the data. 
+My code here looks very similar to the code I wrote before. 
+I'm first creating an empty set, 
+then looping over the data and adding each account key to the set. 
+And finally, 
+I'll return the set of unique students. 
+I could also have gone one step further and returned the number of unique students. 
+But I happen to know that later I'll want to have access to these sets, so I'm going to return them and 
+store them in a variable. 
+If I hadn't known in advance that I would want the sets later, 
+then that wouldn't be a problem, 
+I could just change this function. 
+Then I'll update the later cells to call this function. 
+And I'll rerun the cells to make sure I get the same results. 
+Finally, I'll run this command I told you to run to double check that renaming the column worked. 
+And sure enough, 
+the account_key field is now present in the daily_engagement table. 

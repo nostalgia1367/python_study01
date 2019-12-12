@@ -1,0 +1,21 @@
+So why are some students missing from the daily engagement table? When you see something 
+strange like this, 
+it can be tempting to just move on with the analysis. 
+But it's actually really important to investigate things like this. 
+If you don't understand why something's happening in your data, 
+you could be missing something important in your analysis, and you can't really trust your results. 
+The process I like to use to investigate this type of problem is, 
+first, identify which specific data points are surprising. 
+In this case, 
+that would be any enrollment record with no corresponding engagement data. 
+Next, I like to print out one or a few of the surprising data points. 
+Sometimes I can tell just by looking what the problem is. 
+So go ahead and do that. 
+Find any one row in the enrollment table where that student is not present in the engagement table, 
+and print that row out. 
+If you're not sure how to print only one of the rows, 
+you could try using Python's break statement. 
+There's a link describing it in the instructor notes. 
+And, here's a hint. 
+The sets I made earlier containing the unique students in each table might come in handy here. 
+Do you see anything strange about the record you printed? Describe what you see here. 

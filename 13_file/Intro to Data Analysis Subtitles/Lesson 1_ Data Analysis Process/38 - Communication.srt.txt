@@ -1,0 +1,18 @@
+After drawing conclusions and thinking predictions, 
+the final step of the process is to communicate your findings. 
+Now, even though you don't have rigorous conclusions backed by statistics or machine learning, you can certainly 
+think about how to communicate the results of your exploration. 
+At this stage, 
+you generally want to decide which of your findings you think are most interesting or most worth sharing, and 
+how you want to present those findings. 
+For example, I was interested in the difference in total minutes spent in the classroom between students 
+who passed the first project and students who didn't. 
+And I think the clearest way to present this is simply to present the means for both groups. 
+I also thought the difference in number of days visited in the first week was interesting. 
+And then this case, 
+I thought the histograms did a better job of showing back numbers. 
+If you do want to share any visualizations, 
+in general it's a good idea to spend some time polishing them. 
+You want to make them look nicer and explain what trends you'll noticing in them. 
+You always know what you made a plot of, 
+but your reader doesn't. 

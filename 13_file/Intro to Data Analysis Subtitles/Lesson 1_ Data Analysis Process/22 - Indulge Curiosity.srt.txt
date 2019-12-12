@@ -1,0 +1,10 @@
+Based on the question I want to answer. 
+At this point the next task that would make sense for me to do is to split the data into two groups. 
+Data for students who eventually pass the first project and for students who don't. 
+But I have all this data about students' engagement in the first week, and I'm getting curious. 
+I want to take a look at it. 
+My rule of thumb is when I'm curious about my data, I investigate. 
+Getting a better sense of your data is almost always useful. 
+In this case, 
+I'll probably be able to reuse some of the code I'm writing later. 
+But even if that weren't true, exploring your data is never a waste of time for a data analyst. 

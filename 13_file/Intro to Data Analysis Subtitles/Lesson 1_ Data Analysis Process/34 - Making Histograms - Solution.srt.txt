@@ -1,0 +1,37 @@
+Here are my plots for the total number of minutes spent in the classroom in the first week. 
+We saw earlier that the mean number of minutes spent was much higher for students who passed the project, and 
+we can see that here since these labels are increasing faster than these. 
+We can also see that for students who passed, the number of students who fall into one of the longer buckets is higher 
+relative to the non-passing students. 
+On the other hand, the rough shape of the two histograms is fairly similar. 
+Most students spent the shortest amount of time. 
+And then fewer and fewer students fall in each bucket as you increase the amount of time. 
+This shape holds for both students who pass and students who don't pass the first project. 
+These are the histograms for number of lessons completed. 
+Again, the shapes of the two histograms look fairly similar to each other although you can see that the mean 
+is higher for passing students. 
+Which is in line with what we saw earlier. 
+Finally, here are the histograms that I got for number days visited. 
+You'll notice that in both histograms there are these weird gaps. 
+That's because of the number of bins chosen. 
+This data can only be integers from 0 to 7, 
+so if too many bins are created, 
+then some bins will be completely empty. 
+And that's what happened here. 
+I'm going to fix this later in the lesson, but if you'd like to fix it now, 
+there's some advice in the instructor notes. 
+Ignoring the gaps for a moment, I can see that the shapes of these two histograms are very different. 
+For non-passing students, the shape is similar to earlier, where less and less students are in each bucket as 
+the bucket corresponds to more and more days. 
+However, for the passing students, 
+there's a very different pattern. 
+You can see that students who passed the first project are about equally likely to visit the classroom 7 days 
+during their first week, as 0 days. 
+To make these histograms, 
+I added to the line plt.hist(data) to my described data function. 
+That way I would be able to easily make the histogram for each metric by rerunning the later 
+cells where I describe the data. 
+And the histograms would show up next to the summary statistics. 
+Of course in order for this line to work I needed to import map plot lib. 
+And I also added the line %pylab inline to the top of the cell. 
+So that my plots would show up within my notebook and not in a separate window. 

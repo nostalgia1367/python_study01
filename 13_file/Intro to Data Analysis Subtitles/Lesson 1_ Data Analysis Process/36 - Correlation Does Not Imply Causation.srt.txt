@@ -1,0 +1,48 @@
+Another type of conclusion you might want to be able to draw, 
+is to say that if you change one thing, 
+another thing is likely to change also. 
+For example, you saw that students who passed the first project are more likely to visit the classroom 
+multiple times in their first week. 
+This is a correlation. 
+Passing the first project is correlated with visiting the classroom multiple times. 
+Does this mean that visiting the classroom multiple times in the first week causes the students 
+to pass their project? This would be a statement of causation. 
+For example, suppose Udacity sent emails to students during their first week reminding them to come back. 
+This caused more students to visit multiple times. 
+Would you expect this to increase the number of students who complete their project? 
+It certainly sounds plausible, but we can't be sure based on this data. 
+To see why, 
+let's take a look at this graph, 
+which shows per capita cheese consumption in red. 
+And the number of people who died by becoming tangled in their bedsheets in black. 
+As you can see, these two variables are highly correlated. 
+As one increases, 
+the other tends to increase as well. 
+However, do you think eating cheese causes people to become tangled in their bedsheets? 
+Probably not. 
+This could be a coincidence or there could be some third factor causing both. 
+In this case, it looks like both cheese consumption and bed sheet tangling are increasing over time. 
+If this is the case, 
+then if you banned cheese, 
+bedsheet tangling would probably continue to increase overtime. 
+So what are some third factors that could be causing the correlation between visiting the classroom and 
+passing projects? One that I thought of is level of interest. 
+Maybe people who don't find the data analysis courses very interesting, 
+don't visit the site many times. 
+And then they also don't pass the project because they're not interested in working on it. 
+If you somehow convinced these students to visit the site more, their lack of interest might still prevent them 
+from working on the project. 
+A better approach might be for the student to try learning something else that they find more interesting. 
+Another factor might be background knowledge. 
+Maybe some people don't have the programming knowledge they need to take the data analysis courses and 
+they get stuck and don't come back. 
+If you convince these students to come back and keep trying, they might remain stuck and 
+not be able to make forward progress. 
+In this case, a better solution might be taking a programming course to fill in the missing background knowledge. 
+On the other hand, this correlation could be because of causation. 
+And I actually find that explanation pretty plausible. 
+But the point is that we don't know based on the data we have. 
+To find out whether one change causes another, you need to run an experiment, 
+and online experiments are frequently costed A/B tests. 
+To learn more about how to set these experiments up and some common gotchas that can arise check 
+out Udacity's course on A/B testing linked in the instructor's notes. 

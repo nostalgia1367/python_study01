@@ -1,0 +1,32 @@
+I'm going to show you the process I went through to solve this problem. 
+You can also find the final version of my code in the instructor notes in case you'd like to take a closer look. 
+The code should look pretty similar for each file. 
+So first I'm going to copy the codes that I used before. 
+Then I'll paste the code twice, and I'll need to change the file names into the variable names. 
+So this should be doing engagement.csv, 
+this should be projectsubmissions.csv, 
+I'll name this variable daily engagement and this one one project submissions. 
+Then I'll go ahead and print out one row of each and since I want to print just one row in 
+the cell, I've used print statements. 
+This worked, but anytime you find yourself copying and pasting code or just writing two pieces of 
+code that are very similar, 
+it might be a good idea to write a function instead. 
+That way, if you find a bug later, 
+you'll only have to fix it in one place. 
+In this case, the only thing that changed between these three blocks of code was the file name and 
+the variable name. 
+So I'm going to write a function named read_csv that takes the file name as an input and 
+then returns the list of rows. 
+I'll use this code that I've already written as my starting point. 
+Then instead of the file name here, 
+I'll use the input that I took and instead of creating a variable, 
+I'll return the list. 
+Now I can delete these two blocks. 
+And call the function three times. 
+Now I'll run the code again just to check that it still works. 
+Since this function is so short, it's debatable whether writing it was helpful. 
+But I'm happy I wrote it. 
+For example, if I hadn't realized I needed to open the file with the argument rb, and 
+then later I noticed that I needed it. 
+I could have updated this function, 
+rather than updating the code in three separate places. 

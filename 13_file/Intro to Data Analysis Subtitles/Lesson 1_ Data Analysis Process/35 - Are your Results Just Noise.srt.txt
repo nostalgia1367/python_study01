@@ -1,0 +1,17 @@
+Now that we've fixed a few problems in the Udacity student data, 
+and started to uncover some relationships between the variables, 
+it's time to move on to drawing conclusions, or making predictions. 
+You've probably already started to draw some tentative conclusions. 
+For example, that students who pass the subway project spend more minutes in the classroom during their first 
+week than students who don't. 
+However, even if there was no real difference between students who passed their project than students who didn't, 
+you wouldn't expect the two means to be exactly equal. 
+How can you tell the difference you saw is a true difference or if it's due to noise in the data? 
+The differences we saw looked pretty large so it may be hard to imagine this could be due to noise but 
+intuition does not always work very well in these situations. 
+To rigorously check how likely it would be to see these results by random chance, you need to use statistics. 
+To learn more about how to do this, 
+check out Udacity statistics course linked in the instructor notes. 
+For now we're not going to go further in this direction since statistics isn't required to take this course, but 
+keep in mind that the results we have are only tentative. 
+They haven't been validated. 

@@ -1,0 +1,11 @@
+To figure this out, 
+I first created a variable to store the number of problem students. 
+Then I wrote a similar loop to earlier, 
+where I look at each account key in the enrollment table and check whether that account key was 
+present in the daily engagement table. 
+I also added another check to see whether the join date was equal to the cancel date. 
+I could have also looked at whether days to cancel was equal to zero. 
+Then, if there was a missing student for whom the two dates were not equal, 
+I added one to the total number of problem students. 
+At the end of the loop, 
+I looked at that number and I saw that there were still three surprising records left. 

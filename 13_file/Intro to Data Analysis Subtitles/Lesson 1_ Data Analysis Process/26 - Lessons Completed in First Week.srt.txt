@@ -1,0 +1,5 @@
+Now adapt the code I just showed you to analyze the number of lessons the students complete in their 
+first week instead of the number of minutes they spend. 
+Like I did, calculate the mean, 
+standard deviation, minimum, and maximum, and enter your numbers in these boxes to two decimal places. 
+See if you can write one or more functions to reuse the code I wrote rather than copying and pasting it. 

@@ -1,0 +1,8 @@
+Now I'd like you to find the point in the starter notebook marked 7, 
+and create a list of rows that includes only some of the records from the engagement table. 
+Specifically, you should include rows where the student is one of the paid students you just found, and 
+the date is within one week of the student's join date. 
+Give your new list the variable name paid_engagement_in_first_week. 
+I've created this function you can use to determine if one date is within one week of another. 
+Take a look at the number of engagement records that are present in your new list and enter your number in 
+the box on the next screen. 

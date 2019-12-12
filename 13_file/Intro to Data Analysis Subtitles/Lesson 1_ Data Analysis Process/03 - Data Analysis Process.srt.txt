@@ -1,0 +1,46 @@
+So what are the steps involved in these types of projects? Before you jump in and 
+write a fancy algorithm, 
+you'll want to spend some time getting familiar with your data. 
+The process begins with a question you want to answer or a problem you want to solve. 
+This might be something like, 
+what are the characteristics of students who pass their projects? Or how can I better stock my store with 
+the products people most want to buy? The next step of the process is data wrangling and 
+this really has two parts, 
+data acquisition and data cleaning. 
+First, you need to acquire the data that you need to answer your question or solve your problem. 
+Then it's time to begin investigating the data and cleaning up any problems that you find. 
+The third phase is data exploration. 
+During this phase, you spend some time getting familiar with your data, 
+building your intuition about it and finding patterns. 
+Once you're familiar with your data, 
+you'll usually want to draw some conclusions about it or maybe make some predictions. 
+>From one of our examples previously, 
+Netflix's movie recommendation systems needs to predict which movies its users will like. 
+Also the Facebook paper we saw concluded that users are less likely to click certain articles, specifically one's 
+written from a different ideological perspective than the user has. 
+This phase usually involves statistics or machine learning that are beyond the scope of this course, but 
+there are additional Udacity courses you can take on these topics, 
+if you're interested learning more. 
+And finally, you'll need to communicate your findings to other people. 
+Your findings are only as useful as your ability to communicate them. 
+Even if your end goal is to build some sort of system, 
+like a movie recommender or a news feed ranking algorithm, 
+you'll usually need to share what you've built and how it works with your team. 
+There are a variety of formats this communication can take. 
+You might write a blog post, 
+a paper, an email, 
+a PowerPoint presentation, or just have an in-person conversation. 
+Data visualization is a common technique that's almost always useful when communicating findings about data. 
+Now, this process doesn't actually follow a straight line. 
+Especially the data wrangling phase and to the data exploration phase are very intertwined because you can't 
+really clean any problems with the data before you take a look to see what problems there are. 
+And even when you think you're done wrangling and you're ready to just explore, you'll keep finding more 
+problems and have to go back. 
+Throughout the process, you may need to return to your question and refine it as you become more 
+familiar with the data set. 
+And sometimes data acquisition actually comes before you pose a question. 
+If a new, exciting data set is released, 
+you might acquire the data first, 
+take a look and see what's there, and then think of some questions you could answer with the data. 
+That's what we'll be doing in this lesson. 
+However, this should give you an idea of the high level steps that are involved when you're doing data analysis. 

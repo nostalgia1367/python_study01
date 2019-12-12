@@ -1,0 +1,45 @@
+At this point I'm going to move on from the wrangling phase to the exploration phase. 
+Although of course I might find more problems later and need to fix them. 
+What I want to look at first is how the numbers in the daily engagement table differ for 
+students who eventually pass the first project versus those who don't. 
+However, there are a few things about this question as stated that are under specified or 
+would be a bit weird. 
+First, if I look at all records in the daily engagement table, 
+that will include data from after the project was submitted. 
+That data isn't really relevant, so I might want to only look at engagement data from before the submission 
+of the first project. 
+Second, if I do only look at engagement from before the first submission and students submit after 
+different lengths of time then I'm comparing engagement data from different lengths of time, but 
+student's engagement might have trends over time. 
+For example, engagement might tend to drop off after the first few days. 
+If that were the case, then comparing average engagement over one month for one student versus two months for 
+another might be misleading. 
+And third since the daily engagement table we've been using includes engagement numbers for 
+the entire nano degree program. 
+It's including engagement for courses that are not related to the first project, which is little weird. 
+To handle the first two problems, 
+I'm only going to look at engagement data from the students' first week of enrollment and 
+I'm going to exclude students who cancel within a week. 
+That way I'll be comparing equal amounts of time. 
+This will also have the benefit of excluding people who cancelled during the free trial which was seven days 
+at the time this data was collected. 
+The third issue doesn't seem like a showstopper to me. 
+I'm going to go ahead and look at engagement numbers for any course in the nano degree program 
+and just keep this decision in mind. 
+If you did want to look at engagement data in only the first course of the nano degree you could do 
+that using the daily engagement full table available in the downloadable section 
+which includes a breakdown by course as well. 
+But since this file is pretty big, 
+computations on it can take longer. 
+So, to make things easier, or in case your computer doesn't have that much memory, I'm going use 
+the non-granular version, for now. 
+As a first step, 
+create a dictionary of students who either haven't cancelled yet. 
+Or who stayed enrolled for more than seven days before cancelling. 
+If the student hasn't cancelled yet the days_to_cancel column will be None. 
+And if they've stayed enrolled for more than 7 days, 
+the days_to_cancel field will be > 7. 
+The keys of your dictionary should be account keys and the values should be the date that the 
+student enrolled, since this date will be useful later to find engagement records during the first week. 
+You should name your dictionary paid_students. 
+Enter the number of students who meet these conditions in this box. 

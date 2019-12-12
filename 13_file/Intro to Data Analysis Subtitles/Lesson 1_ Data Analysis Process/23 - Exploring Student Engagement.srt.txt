@@ -1,0 +1,67 @@
+One thing I'd like to look at is the average number of minutes students spend in the classroom during 
+their first week. 
+Right now I have a bunch of engagement records for different students, and they're not in any particular order. 
+First, I'd like to separate out the engagement records into groups where each group contains all the engagement 
+records for a particular student. 
+I'll represent these groups using a dictionary where the keys are student account keys and the values are lists 
+of engagement records for that student. 
+Next, I'll compute the total number of minutes spent in the classroom by each student by summing up the number of 
+minutes in each engagement record for that student. 
+Finally, I'll compute the average of the totals to get the answer I'm looking for. 
+Now I'll show you the code I used to solve this problem. 
+First I created the dictionary I mentioned to group engagement data by the account key. 
+You can see that I used the defaultdict instead of a vanilla dictionary. 
+If you haven't seen Python's defaultdict before, that's okay. 
+It allows you to specify a default value. 
+In this case I've specified list. 
+That means if I ever try to look up a key in the dictionary and that key is not there, 
+I'll get the empty list instead. 
+You'll see how this can be helpful in a minute. 
+Then I looped through each engagement record and saved the account key in this variable. 
+Next I looked up the list of engagement records for that account key. 
+Here's where the defaultdict that comes in handy if I had never added that account key yet, 
+then I get the empty list. 
+Then I append this engagement record to the list of engagement records for that account key. 
+Next I wanted to add up the number of minutes visited by each account and I decided to save that 
+in this dictionary. 
+So this dictionary will store a number for each account key, 
+instead of a list of engagement records. 
+Next I looped over the dictionary I created previously. 
+And by looping over the .items, 
+I got both the key and the value for each entry in the dictionary. 
+For each account, 
+the number of minutes starts at 0. 
+Next I loop over each engagement record in the list of engagement records for that student. 
+And I add the number of minutes that student visited in that engagement record to the total number 
+of minutes for the student. 
+Finally, I store that number of minutes under that account key in the new dictionary. 
+Now I'm ready to take the average of those totals, and for that the account keys 
+are no longer relevant. 
+I'm just interested in the numbers themselves. 
+So I'll use the .values method to get out just the values from that dictionary. 
+Now I could calculate the mean by hand, 
+but instead I'm going to use a library called numpy to do it. 
+You'll be seeing a lot of numpy later in this course. 
+And I've imported it using the line import numpy as np. 
+Adding as np allows me to later refer to the numpy library as np, 
+instead of referring to it as numpy. 
+It's just a little shorter and easier to type. 
+You don't have to do this, but lots of code posted online will have this convention, so 
+it's good to have seen it before. 
+Then I can take the mean by calling np.mean and passing in the total minutes. 
+I see that the average number of minutes spent was 647. 
+I'm interesting in knowing more than just the mean here, though. 
+I'd also like to know what's the standard deviation and what's the minimum and what's the maximum. 
+It turns out numpy has functions to calculate those as well. 
+They are np.std, np.min and np.max. 
+Now, you might know that Python actually also has a min and max function that you can use 
+without importing the numpy library. 
+You'll learn later why you might want to use numpy's version instead. 
+But for now I'm just going to go ahead and use it since I've already imported the library. 
+And when I run this I see that the standard deviation is pretty large, 
+larger than the mean. 
+The minimum is 0 and the maximum is about 10,000 minutes. 
+That's a huge maximum and in fact there's gotta be a problem here, 
+because when you calculate it out, 
+that's actually slightly more than the total number of minutes in one week. 
+So something has gone wrong. 

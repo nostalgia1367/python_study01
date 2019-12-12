@@ -1,0 +1,35 @@
+To find the number of enrollments I'll use the len function. 
+And running this cell I can see that there were 1,640 enrollments. 
+To find the number of unique students who enrolled, 
+I'll add the account keys to a set and then look at the length of the set. 
+So, first I'll create an empty set called unique_enrolled_students. 
+Then I'll loop through the enrollments. 
+And I'll add the account key from each enrollment to this set. 
+Finally, I'll look at the length of the set. 
+And it turns out that there were 1302 unique students who enrolled. 
+The reason these two numbers are different is that students can enroll then cancel. 
+Then re-enroll later. 
+Next I'll check how many entries are in the daily engagement table, and there are a lot more, 
+which makes sense since there should be multiple entries for each student. 
+To find the unique number of students in the daily engagement table I'll need similar code to before, 
+so I'll copy and paste it. 
+First, I'll need to change the table I'm lifting over. 
+Now, I don't technically need to change the name of the set. 
+I could name both sets unique students for example. 
+But then the second set would overwrite the first set. 
+So when using iPython Notebook it's often a good idea to give a new name to each new variable so 
+that you'll still have access to the previous variable if you want. 
+So I'll change the set name also. 
+I'll also change the looping variable to make the code more clear. 
+Finally I'll need to change the account key column name to ACCT. 
+Again since I copied and pasted some code here, 
+writing a function would have been a good idea. 
+I'll get to that in a later video. 
+The main difficulty in this case would be that this account key has become ACT in this loop but 
+it's possible to handle that. 
+And I saw that there where 1237 unique students in the engagement table. 
+When I first ran this code, 
+I was surprised that these two numbers weren't the same. 
+We'll see in a later video why that happened. 
+And finally, I followed a similar process for the projects submission table and found there were 3642 project 
+submissions from 743 unique students. 
