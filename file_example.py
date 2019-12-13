@@ -52,12 +52,12 @@ f.close()
 '''
 
 
-with open('regExp.py', 'r') as f:
+with open('regExp.py', 'rt', newline='') as f:
 
     while True:
         line = f.readline()
         if not line: break
-        print(line)
+        print(line.splitlines()[0])
 
     # f.close()  #with문을 사용할 경우 파일 close처리를 하지 않아도 됨.
 
